@@ -1,15 +1,16 @@
 import React from "react";
-import Sidebar from "./Sidebar";
-import Main from "./Main";
+import Sidebar from "../components/Sidebar";
+import Main from "../components/Main";
 import "./App.css";
-import store from "./store";
+import store from "../store";
+import _ from "lodash";
 
 const App = () => {
   const { contacts } = store.getState();
 
   return (
     <div className="App">
-      <Sidebar contacts={contacts} />
+      <Sidebar contacts={_.values(contacts)} />
       <Main />
     </div>
   );
