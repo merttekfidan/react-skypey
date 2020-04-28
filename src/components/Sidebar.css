@@ -7,7 +7,28 @@
   overflow-y: scroll;
 }
 
-/* not small devices  */
+/* width */
+.Sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.Sidebar::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+/* Handle */
+.Sidebar::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.Sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*not small devices*/
+
 @media (min-width: 576px) {
   .Sidebar {
     width: 320px;

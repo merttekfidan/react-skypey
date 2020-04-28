@@ -1,12 +1,14 @@
 .User {
   display: flex;
   align-items: flex-start;
-  padding: 1rem;
+  padding: 1em;
 }
+
 .User:hover {
   background: rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+
 .User__pic {
   width: 50px;
   border-radius: 50%;
@@ -14,7 +16,6 @@
 .User__details {
   display: none;
 }
-
 /* not small devices  */
 @media (min-width: 576px) {
   .User__details {

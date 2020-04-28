@@ -22,6 +22,7 @@ export const state = {
   typing: "",
   contacts,
   activeUserId: null,
+  chatBoxContainReply: [false, "", ""],
 };
 
 /**
@@ -44,6 +45,8 @@ function generateMsg(number) {
     number,
     text: txtgen.sentence(),
     is_user_msg: faker.random.boolean(),
+    edited: false,
+    containReply: false,
   };
 }
 /**
